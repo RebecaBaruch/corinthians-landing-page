@@ -86,26 +86,31 @@ section{
     font: bold 3rem 'Roboto Condensed', sans-serif;
 }
 
-.text-content{
+.text-container{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     gap: 10px;
+    font: 0.9rem 'Roboto Condensed', sans-serif;
 }
 
-.title-container{
+.title-container h1{
     font: bold 3.5rem 'Raleway', sans-serif;
 }
 
-.text-content{
-    font: 0.9rem 'Roboto Condensed', sans-serif;
+.txtContent{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .story-section{
     padding: 100px 0;
 }
 
-.story-container{
+.story-container,
+.democ-container{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -122,4 +127,16 @@ section{
 
 .story-img img{
     width: 100%;
+}
+
+.democ-container{
+    margin-bottom: 10vh;
+}
+
+.democ-text{
+    width: 53%;
+}
+
+.democ-title h2{
+    font: bold 2rem 'Raleway', sans-serif;
 }
