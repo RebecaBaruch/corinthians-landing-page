@@ -1,7 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,500&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+:root{
+    --black: #060606;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 1px solid tomato;
+}
+
+.site{
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
 }
 
 header{
@@ -19,9 +32,15 @@ nav{
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
+    font: 1rem 'Raleway', sans-serif;
+    font-weight: bold;
 }
 
 ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
     list-style: none;
 }
 
@@ -29,8 +48,78 @@ li{
     display: inline-block;
 }
 
+section{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.container{
+    width: 70%;
+}
+
 .header-section{
-    background-color: black;
+    background: url(../img/bg_header_section.png) no-repeat center;
+    background-size: cover;
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
+
+    background-color: tomato;
+}
+
+.headerBreak-section{
+    background-color: var(--black);
+}
+
+.break-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 120%;
+    background-color: var(--black);
+}
+
+.headerBreak-section span p{
+    padding: 40px 7px;
+    color: white;
+    font: bold 3rem 'Roboto Condensed', sans-serif;
+}
+
+.text-content{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title-container{
+    font: bold 3.5rem 'Raleway', sans-serif;
+}
+
+.text-content{
+    font: 0.9rem 'Roboto Condensed', sans-serif;
+}
+
+.story-section{
+    padding: 100px 0;
+}
+
+.story-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.story-text{
+    max-width: 45%;
+}
+
+.story-img{
+    width: 45%;
+}
+
+.story-img img{
+    width: 100%;
 }
