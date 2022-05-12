@@ -2,13 +2,27 @@
 
 :root{
     --black: #060606;
+    --golden: #D3964E;
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid tomato;
+}
+
+html{
+  scroll-behavior: smooth;
+  transition: all 1s ease-out;
+}
+
+:target {
+    scroll-margin-top: .8em;
+  }
+
+body{
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .site{
@@ -18,29 +32,29 @@
 }
 
 header{
+    position: absolute;
+    top: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
     width: 100vw;
-    background-color: white;
 }
 
 nav{
-    width: 70%;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    font: 1rem 'Raleway', sans-serif;
-    font-weight: bold;
+    width: 70% ;
+    font: 1rem 'Raleway', sans-serif ;
+    font-weight: medium;
+    color: white;
 }
 
 ul{
     display: flex;
-    justify-content: center;
     gap: 20px;
-    width: 100%;
     list-style: none;
 }
 
@@ -48,6 +62,7 @@ li{
     display: inline-block;
 }
 
+/*formatacao padrao*/
 section{
     display: flex;
     justify-content: center;
@@ -56,41 +71,6 @@ section{
 
 .container{
     width: 70%;
-}
-
-.header-section{
-    background: url(../img/bg_header_section02.png) no-repeat center;
-    background-size: cover;
-    width: 100vw;
-    height: 90vh;
-}
-
-.header-text{
-    color: white;
-}
-
-.header-text > .txtContent p{
-    font-size: 2rem;
-    font-weight: 00;
-}
-
-.headerBreak-section{
-    background-color: var(--black);
-}
-
-.break-container{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-    width: 120%;
-    background-color: var(--black);
-}
-
-.headerBreak-section span p{
-    padding: 40px 7px;
-    color: white;
-    font: bold 3rem 'Roboto Condensed', sans-serif;
 }
 
 .text-container{
@@ -112,12 +92,280 @@ section{
     gap: 15px;
 }
 
-.story-section{
-    padding: 100px 0;
+/*header-section*/
+.header-section{
+    background: url(../img/bg_header_section.png) no-repeat center;
+    background-size: cover;
+    width: 100vw;
+    height: 95vh;
 }
 
-.story-container,
-.democ-container,
+.header-container{
+    position: relative;
+}
+
+.header-container,
+.subTit-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-container{
+    justify-content: center;
+}
+
+.header-text{
+    width: 45%;
+    color: white;
+    gap: 5px;
+}
+
+.header-title{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center ;
+}
+
+.header-title > div > h1{
+    font-size: 4rem;
+}
+
+.titPt-01{
+        background-color: rgba(255, 255, 255, 0.49);
+}
+
+.titPt-01 > h1{
+    background: url(../img/bg_header_section.png) no-repeat center;
+    background-size: 100vw 100vh;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header-text > .txtContent p{
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.subTit-container{
+    gap: 10px;
+}
+
+.subTit-container .txtContent p{
+    text-align: right;
+}
+
+.subTit-container .txtContent{
+    width: 90%;
+}
+
+.subTit-container > .arrowDown{
+    width: 100%;
+}
+
+.arrowDown > img{
+    width: 65px;
+}
+
+.redes-container{
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    height: fit-content;
+}
+
+.iconsContainer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.redesStick{
+    width: 3px;
+    height: 200px;
+    background-color: white;
+}
+
+.halfStick{
+    width: 100%;
+    height: 50%;
+    background-color: var(--golden);
+}
+
+.points-container{
+    position: absolute;
+    top: 15%;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.stickPoints{
+    width: 3px;
+    height: 165px;
+    background-color: white;
+}
+
+.pointsContent{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.point{
+    width: 15px;
+    height: 15px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.316);;
+}
+
+.point01{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+}
+
+.pointInside{
+    width: 80%;
+    height: 80%;
+    background-color: white;
+}
+
+.point:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    transition: all 0.3s ease-out;
+
+    cursor: pointer;
+}
+
+.point:hover > div{
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    background-color: white;
+}
+
+/*headerBreak-section*/
+.headerBreak-section{
+    background-color: var(--black);
+}
+
+.break-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-end;
+    margin: 10vh 0 10vh 0;
+    height: fit-content;
+    background-color: var(--black);
+}
+
+.headerBreak-section .spanTitle{
+    color: var(--golden);
+    font: bold 5rem 'Roboto Condensed', sans-serif;
+}
+
+.spanTxt{
+    color: white;
+    font: 500 2rem 'Roboto Condensed', sans-serif;
+}
+
+/*historia-section*/
+.story-section{
+    padding: 10vh 0;
+}
+
+.story-text{
+    gap: 40px;
+}
+
+.story-title{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+
+.story-title h1 {
+    font-size: 5.2rem;
+}
+
+.story-title h1 > span{
+    font-size: 5.2rem;
+    font-weight: bold;
+    color: var(--golden);
+}
+
+.story-title span{
+    font: 400 3.8rem 'Roboto Condensed';
+}
+
+.imgTxt-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.imgTxt-container .txtContent{
+    width: 50%;
+    font-size: 15px;
+}
+
+.democ-imgTxt-container{
+    align-items: flex-end;
+}
+
+.democ-imgTxt-container > div{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    height: 50%;
+    overflow: visible;
+}
+
+.democ-imgTxt-container .txtContent h1{
+        font: bold 3rem 'Raleway', sans-serif;
+}
+
+.story-img{
+    width: 50%;
+}
+
+figure > img{
+    width: 100%;
+}
+
 .elenco-container,
 .ending-container{
     display: flex;
@@ -126,32 +374,7 @@ section{
     align-items: center;
 }
 
-.story-text{
-    max-width: 45%;
-}
-
-.story-img{
-    width: 45%;
-}
-
-.story-img img{
-    width: 100%;
-}
-
-.democ-container{
-    margin-bottom: 10vh;
-}
-
-.democ-text{
-    width: 53%;
-}
-
-.democ-title h2{
-    font: bold 2rem 'Raleway', sans-serif;
-}
-
 /*titulos-section*/
-
 .titulos-section{
     background: url(../img/stadium_bg.png) no-repeat center;
     background-size: cover;
@@ -186,6 +409,7 @@ section{
 .titulos-title span h1{
     font-size: 7rem;
     line-height: 4.5rem;
+    color: var(--golden);
 }
 
 .titItems-container{
@@ -225,7 +449,7 @@ section{
 .titStick{
     width: 5px;
     height: 30px;
-    background-color: white;
+    background-color: var(--golden);
 }
 
 .titDate > p{
@@ -239,13 +463,20 @@ section{
     top: 25px;
     width: 100%;
     height: 259px;
-    border: 5px solid white;
+    border: 5px solid var(--golden);
 
     z-index: 0;
 }
 
+
+/*elenco-section*/
 .elenco-section{
     background-color: var(--black);
+}
+
+.elenco-title h2{
+    color: var(--golden);
+    font-size: 2rem;
 }
 
 .elenco-container{
@@ -254,6 +485,7 @@ section{
     color: white;
 }
 
+/*uniforme-section*/
 .uniforme-section{
     background: url(../img/uniforme.png) no-repeat center;
     background-size: cover;
@@ -270,10 +502,14 @@ section{
     color: white;
 }
 
+/*ending-section*/
 .ending-container{
     margin: 10vh 0 10vh 0;
     justify-content: center;
     gap: 40px;
+}
+.ending-title h1 span{
+    color: var(--golden);
 }
 
 .ending-title h1{
@@ -292,4 +528,20 @@ section{
     height: 80%;
     width: 7px;
     background-color: var(--black);
+}
+
+/*footer*/
+footer{
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    align-items: center;
+    padding: 5vh 15vw;
+    width: 100%;
+    background-color: var(--black);
+    color: white;
+}
+
+footer span p{
+    font: bold 20px 'Raleway', sans-serif;
 }
