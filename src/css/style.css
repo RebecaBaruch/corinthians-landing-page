@@ -59,10 +59,19 @@ section{
 }
 
 .header-section{
-    background: url(../img/bg_header_section.png) no-repeat center;
+    background: url(../img/bg_header_section02.png) no-repeat center;
     background-size: cover;
     width: 100vw;
     height: 90vh;
+}
+
+.header-text{
+    color: white;
+}
+
+.header-text > .txtContent p{
+    font-size: 2rem;
+    font-weight: 00;
 }
 
 .headerBreak-section{
@@ -108,7 +117,9 @@ section{
 }
 
 .story-container,
-.democ-container{
+.democ-container,
+.elenco-container,
+.ending-container{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -233,3 +244,52 @@ section{
     z-index: 0;
 }
 
+.elenco-section{
+    background-color: var(--black);
+}
+
+.elenco-container{
+    margin: 10vh 0 10vh 0;
+    gap: 40px;
+    color: white;
+}
+
+.uniforme-section{
+    background: url(../img/uniforme.png) no-repeat center;
+    background-size: cover;
+    width: 100vw;
+    height: 760px;
+}
+
+.uniforme-container{
+    margin-top: 120px;
+}
+
+.uniforme-text{
+    width: 45%;
+    color: white;
+}
+
+.ending-container{
+    margin: 10vh 0 10vh 0;
+    justify-content: center;
+    gap: 40px;
+}
+
+.ending-title h1{
+    font-size: 2.5rem;
+}
+
+.logo-corinthians{
+    width: 120px;
+}
+
+.logo-corinthians img{
+    width: 100%;
+}
+
+.ending-stick{
+    height: 80%;
+    width: 7px;
+    background-color: var(--black);
+}
